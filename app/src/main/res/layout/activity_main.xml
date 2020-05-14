@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"></LinearLayout>
+
+    <TextView
+        android:padding="16dp"
+        android:text="LAPS"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <com.webianks.library.scroll_choice.ScrollChoice
+        android:id="@+id/scroll_choice3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-25dp"
+        android:layout_height="173dp"
+        app:scroll_atmospheric="true"
+        app:scroll_background_color="@android:color/white"
+        app:scroll_indicator="true"
+        app:scroll_indicator_color="@android:color/holo_blue_light"
+        app:scroll_item_align="center"
+        app:scroll_selected_item_background="@android:color/white"
+        app:scroll_selected_item_text_color="@android:color/holo_blue_light" />
+
+
+    <TextView
+        android:padding="16dp"
+        android:text="LAP LENGTH"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"></TextView>
+
+
+
+    <EditText
+        android:id="@+id/lap_minutes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:hint="00"
+    android:textColor="@android:color/holo_blue_light"
+    android:textSize="40dp"
+    android:layout_marginLeft="150dp"
+    android:layout_marginTop="-10dp"
+    android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/lap_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-75dp"
+        android:inputType="number"></EditText>
+
+
+
+
+
+    <TextView
+        android:padding="16dp"
+        android:text="REST PERIOD"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"></TextView>
+
+
+    <EditText
+        android:id="@+id/rest_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-10dp"
+        android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/rest_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-75dp"
+        android:inputType="number"></EditText>
+
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/play_foreground"
+        android:background="@android:color/white"
+        android:layout_marginLeft="150dp"></ImageButton>
+
+</LinearLayout>

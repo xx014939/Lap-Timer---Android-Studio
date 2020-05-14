@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".main_page">
+
+
+    <TextView
+        android:id="@+id/lapTimeRemaining"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAP TIME REMAINING"
+        android:textColor="@android:color/holo_blue_light"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/restTimeRemaining"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REST TIME REMAINING"
+        android:textColor="@android:color/holo_red_light"></TextView>
+
+
+    <TextView
+        android:id="@+id/timer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="00:00"
+        android:textSize="100dp"
+        android:textColor="@android:color/holo_blue_light"></TextView>
+
+    <ImageButton
+        android:id="@+id/playTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/play_foreground"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="255dp"
+
+        android:background="@android:color/white"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pause_foreground"
+        android:background="@android:color/white"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="155dp"></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Laps Remaining "
+        android:textSize="55dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="250dp"></TextView>
+
+    <TextView
+        android:id="@+id/laps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="100dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="180dp"
+        ></TextView>
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:visibility="visible"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/white"
+        android:src="@mipmap/restart_foreground"></ImageButton>
+
+    <Button
+        android:id="@+id/configButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="315dp"
+        android:text="CONFIGURE"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="600dp"
+        ></Button>
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="EXIT"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="600dp"
+        ></Button>
+
+
+</RelativeLayout>
